@@ -16,7 +16,6 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
-<<<<<<< HEAD
     this.x = (dt * this.speed) + this.x;
     if (player.x > this.x + 100 && player.x > this.x - 50){
         if (player.y > this.y - 50 && player.y + 50){
@@ -28,11 +27,6 @@ Enemy.prototype.update = function(dt) {
         this.x = (-400) * Math.random();
     }
 };
-||||||| merged common ancestors
-}
-=======
-};
->>>>>>> udacity/master
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
@@ -51,7 +45,7 @@ var Player = function() {
 };
 
 Player.prototype.update = function(){
-    
+
 };
 
 Player.prototype.render = function(){
@@ -88,7 +82,7 @@ Player.prototype.handleInput = function(key){
     }
 };
 // Now instantiate your objects.
-// Place all enemy objects in an array called 
+// Place all enemy objects in an array called
 var allEnemies =[];
 for (var i = 0; i < 5; i++) {
     allEnemied.push(new enemy());
